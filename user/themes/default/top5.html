@@ -1,0 +1,27 @@
+<div style="float: left; color: #cde0f2; font-size: 11px; margin-bottom: 4px; margin-left: 5px;">
+	Top 5 serveriai
+</div>
+
+<div style="float: right; margin-bottom: 4px; margin-right: 5px;">
+	<a href="http://www.top.llb.lt" style="color: #cde0f2; font-size: 11px;" target="_blank">Visi serveriai</a>
+</div>
+	
+<div class='simple_clear'></div>
+
+{loop="servers_list"}
+	<div class='lfpb_line {if="$value._id == 1"}lfpb_line_rounded_top{/if}{if="$value._id == 5"}lfpb_line_rounded_bottom{/if} qtip_left' title='{$value.title}'>
+		<div class='lfpb_top5_body server_rank' style='float: left; width: 10px; margin-left: 3px;'>
+			<span class='lf_stext2'>{$value.rank}</span>
+		</div>
+			
+		<div class='lfpb_top5_body server_title' style='float: left; width: 140px;'>
+			<a href='{$value.web_url}' style='text-decoration: none;'  target='_blank'>{$value.short_title}</a>
+		</div>
+			
+		<div class='lfpb_top5_body server_votes' style='float: right; width: 35px; margin-right: 3px'>
+			<span class='lf_stext2'>{$value.votes}</span>
+		</div>
+			
+		<div class='simple_clear'></div>
+	</div>
+{/loop}

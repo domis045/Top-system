@@ -1,0 +1,61 @@
+img { vertical-align: middle; }
+
+#servers_list_box { color: #1a1a1a; width: 980px; line-height: 26px; }
+#servers_vote_list_box { line-height: 25px; margin-left: 0px;  }
+
+.server_list { float: left; text-align: center; }
+
+.server_vote_list { float: left; text-align: center; }
+
+.server_list.top { background: #1d2927; color: #ffffff; }
+
+.server_list.rank { width: 60px; }
+.server_list.title { width: 280px; text-align: left; }
+
+.server_vote_list.title { width: 220px; text-align: left; }
+
+.server_list.chronicle { width: 70px; }
+.server_list.rates { width: 120px; }
+.server_list.statistic { width: 200px; }
+.server_list.statistic img { margin-top: -4px; }
+.server_list.vote { width: 100px; text-decoration: none; }
+.list_vote_img { margin-top: -2px; }
+.server_list.votes { width: 110px; }
+.server_list.vote_votes { width: 210px; }
+
+.chronicle_title, 
+.login_server_status_title, 
+.game_server_status_title,
+.vote_chronicle_title, 
+.vote_login_server_status_title, 
+.vote_game_server_status_title { 
+	cursor: help; 
+}
+
+.server_list_hover { background: url('../images/hover_bg.jpg'); width: 940px; height: 26px; margin-top: 1px; margin-bottom: 1px; }
+.server_list_hover:hover { background: #1d2927; width: 940px; color: #ffffff; }
+
+.server_list_hover:hover .list_link { color: #ffffff; }
+
+.server_list_hover.deleted_opacity { 
+	-moz-opacity:.50; 
+	-ms-filter:"alpha(opacity=50)"; 
+	filter:alpha(opacity=50); 
+	opacity:.50;
+}
+
+.list_link { color: #4a6772; text-decoration: none; }
+
+.servers_list_out { margin-top: 3px; }
+
+.line { 
+	background: url('../images/line.jpg'); 
+	background-repeat: repeat-x; 
+	height: 4px;
+}
+
+.line_box {
+	position: relative;
+	margin-top: 25px;
+	bottom: 15px;
+}

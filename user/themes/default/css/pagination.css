@@ -1,0 +1,65 @@
+
+.pagination {
+	margin-top: 20px;
+}
+
+.pagination ul {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 12px;
+}
+
+.pagination li {
+	list-style-type: none;
+	display: inline;
+	padding-bottom: 1px;
+	padding: 1px;
+}
+
+.pagination a {
+	background: url('../images/pagination_button.jpg') no-repeat;
+	display: block;
+	float: left;
+	width: 111px;
+	height: 33px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 33px;
+	margin-right: 10px;
+	color: #1a1a1a;
+	-moz-opacity:.70; 
+	-ms-filter:"alpha(opacity=70)"; 
+	filter:alpha(opacity=70); 
+	opacity:.70;
+}
+
+.pagination a:visited {
+	margin-top:1px;
+}
+
+.pagination a:hover, .pagination a:active {
+	-moz-opacity:1; 
+	-ms-filter:"alpha(opacity=100)"; 
+	filter:alpha(opacity=100); 
+	opacity:1;
+	text-decoration: none;
+}
+
+.pagination a.currentpage {
+	-moz-opacity:1; 
+	-ms-filter:"alpha(opacity=100)"; 
+	filter:alpha(opacity=100); 
+	opacity:1;
+}
+
+.pagination li.disablepage {
+	padding: 0 5px;
+	border: 1px solid #929292;
+	color: #929292;
+}
+
+* html .pagination li.currentpage, * html .pagination li.disablepage {
+	margin-right: 5px;
+	padding-right: 0;
+}

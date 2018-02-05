@@ -1,0 +1,76 @@
+<div id="servers_list_box">
+	<div class="server_list top rank">Vieta</div>
+	<div class="server_list top title">Pavadinimas</div>
+	<div class="server_list top chronicle">Kronika</div>
+	<div class="server_list top rates">Daugikliai (XP)</div>
+	<div class="server_list top statistic">Serverio būklė</div>
+	<div class="server_list top votes">Balsų kiekis</div>
+	<div class="server_list top vote">Balsavimas</div>
+	
+	<div id="clear"></div>
+
+	<div class="servers_list_out">
+		{loop="servers_list"}
+			<div class="server_list_hover {if="$is_admin && $value.deleted && $show_deleted_servers"}deleted_opacity{/if}">
+				{if="$is_admin"}
+					<!-- delete -->
+					<div style="position: absolute; margin-left: -75px;">
+						{$value.delete_completely}
+						<span style='margin-left: 10px;'>{$value.delete}</span>
+					</div>
+				{/if}
+			
+				<!-- rank -->
+				<div class="server_list rank">{$value.rank}</div>
+				
+				<!-- title -->
+				<div class="server_list title">
+					<span class="description_title" title="{$value.description}">
+						<a href="{$value.web_url}" class="list_link" {$value.bold} target="_blank">{$value.title}</a>
+					</span>
+				</div>
+				
+				<!-- chronicle -->
+				<div class="server_list chronicle">
+					<span class="chronicle_title" title="{$value.chronicle_full}">{$value.chronicle_short}</span>
+				</div>
+				
+				<!-- rates -->
+				<div class="server_list rates">x{$value.xp}</div>
+				
+				<!-- status -->
+				<div class="server_list statistic">
+					<!-- login -->
+					<span class="login_server_status_title" title="Login server: {$value.login_status_text}">
+						LS: {$value.login_status_image}
+					</span> 
+					
+					<!-- game -->
+					<span class="game_server_status_title" title="Game server: {$value.game_status_text}">
+						GS: {$value.game_status_image}
+					</span>
+				</div>
+				
+				<!-- votes -->
+				<div class="server_list votes">{$value.votes}</div>
+				
+				<!-- vote -->
+				<div class="server_list vote">
+					<a href="{$home_path}/vote-{$value.id}" class="list_link" title="Balsuoti">
+						<img src="{$theme}/images/icons/vote_off.png" class="list_vote_img" alt=""> Balsuoti
+					</a>
+				</div>
+				
+				{$value.line}
+				
+				<div id="clear"></div>
+			</div>
+		{/loop}
+	</div>
+	
+	<div id="pagination">
+		{$pagination}
+	</div>
+	
+	<div id="clear"></div>
+</div>

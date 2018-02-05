@@ -1,0 +1,26 @@
+#admin_actions
+{
+	position: absolute;
+	margin-left: 920px;
+}
+
+.adm_btn:hover
+{
+  opacity: 0.6;
+}
+
+#banned_txt
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: #e2a089;
+}
+
+#banned
+{
+	border-radius: 4px; 
+	height: 24px;
+	color: #ffffff;
+	cursor: pointer;
+	background-color: #efc39f;
+}

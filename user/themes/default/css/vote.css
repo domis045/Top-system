@@ -1,0 +1,12 @@
+.vote_box {
+  margin: 12px 0 0;
+  padding: 10px 10px 10px;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+}
+
+.vote_box.fix { width: 254px; }
+
+@-moz-document url-prefix() {
+	.vote_box.fix { width: 250px; }
+}
